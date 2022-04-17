@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1D1B27;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.container-fluid{
+    padding:50px ;
+}
+
+h1{
+    font-family: 'Fjalla One';
+    color: white;
+    text-align: left;
+    font-size: 48px;
+}
+
+h2{
+    font-size: 24px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: left;
+}
+
+hr{
+    margin: 0 auto;
+    width: 100px;
+    border-top: 3px solid #D3418D;
+}
+
+h6{
+    padding-top: 11px;
+    text-align: center;
+    font-family: 'Cantarell';
+    color: white;
+    font-size: 11px;
+}
+
+
+/* Nav Styling */
+
+li{
+    display: inline;
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+    margin: 0px 80px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.nav-items li:hover{
+    cursor:pointer;
+    color: #D3418D;
+}
+
+.profile-group{
+    padding: 20px;
+}
+
+.profile-group p{
+    color: white;
+}
+
+/* .search-bar{
+    height: 50px;
+    width: 250px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px; 
+} */
+
+/* .search-bar h2{
+    font-size: 14px;
+    text-align: left;
+} */
+
+/* End of Nav Styling */
+
+
+.movie-img img{
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.pink-block{
+    margin: 0px 20px;
+    background-color: #D3418D;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.pink-block h1, h2{
+    text-align: center;
+}
+
+h1,h2,h3,p{
+    color: white;
+}
+
+.movie-details{
+    margin-top: 50px;
+}
+
+.movie-details h1{
+    color: #D3418D;
+    text-align: left;
+}
+
+.movie-details h2{
+    text-align: left;
+}
+
+.binge-later-button{
+    text-align: center;
+}
+
+.watch-later-btn{
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 5px solid #5E1DE8;
+    width: auto;
+}
+
+u{
+    text-decoration: underline 2px #D3418D;
+    text-underline-offset: 10px;
+}
+
+.cast-left{
+    margin: 50px 0px;
+}
+
+footer{
+    background-color: #5a596b;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+.contact-info li{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    display: block;
+    margin: 20px;
+    text-align: right;
+}
+
+.legal-info li{
+    font-size: 14px;
+    font-family: "cantarell";
+    margin: 20px 0;
+    display: block;
+}
+
+.socials img{
+    margin: 0 auto;
+    margin: 20px;
+    text-align: center;
+}
+
+.socials p{
+    text-align: center;
+}
+
+.socials{
+    text-align: center;
+}
+
+.hamburger-items{
+    display: none;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.dropdown{
+    display: block;
+    transition: ease-in;
+}
+
+.go-back{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1440px){
+    
+}
+
+/* Desktop @media */
+@media only screen and (min-width: 768px){
+    .hamburger-nav{
+        display: none;
+    }
+
+    .contact-info img{
+        display: none;
+    }
+
+
+    .binge-later{
+        display: none;
+    }
+}
+
+.btn-primary{
+    background-color: #D3418D;
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.btn-primary:hover{
+    background-color: #D3418D;
+    box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    -webkit-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    -moz-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    transition: 0.3s;
+}
+
+.btn-primary:focus{
+    background-color: #D3418D;
+}
+
+.trailer-sec{
+    width: 500px;
+    display: none;
+    margin: 0 auto;
+}
+
+
+/* Tablet @media */
+@media only screen and (max-width: 1024px){
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .go-back{
+        display: block;
+        padding-left: 50px;
+        padding-top: 50px;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .pink-block{
+        height: 100px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 100px;
+        position: relative;
+        top: 200px;
+    }
+
+    .movie-details{
+        position: relative;
+        top: 170px;
+    }
+
+    
+
+    .pink-block h1{
+        font-size: 14px;
+        font-family: 'cantarell';
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .director{
+        display: none;
+    }
+
+    .movie-img{
+        height: 300px;
+    }
+
+    .navbar-toggler{
+        width: 230px;
+        border: none;
+        text-align: right;
+    }
+
+    .logo{
+        text-align: right;
+    }
+
+    .profile-group{
+        text-align: right;
+    }
+
+    .navbar-toggler-icon{
+        margin: 0 auto;
+    }
+
+    .hamburger-nav{
+        background-color: #5a596b;
+    }
+
+    .cast-header, .cast-left{
+        display: none;
+    }
+
+    .binge-later-button{
+        display: none;
+    }
+
+    .watch-later-btn:hover{
+        transform: scale(1.5);
+        cursor:alias;
+    }
+
+    .contact-info li{
+        display: none;
+    }
+
+    .contact-info img{
+        position: relative;
+        top: 0px;
+        margin-bottom:20px ;
+    }
+    
+    footer{
+        position: relative;
+        top: 300px;
+    }
+
+    .body-text{
+        position: relative;
+        top: 200px;
+    }
+
+    .trailer-sec{
+        position: relative;
+        top: 200px;
+    }
+}
+
+/* Mobile @media */
+@media only screen and (max-width: 667px){
+    .desktop-nav{
+        display: none;
+    }
+
+    .accessibility{
+        font-size: 9px;
+    }
+
+    .go-back{
+        display: block;
+        padding-left: 50px;
+        padding-top: 50px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    .btn-primary{
+        padding: 10px;
+    }
+
+    .navbar-toggler{
+        width: 40px;
+        border: none;
+        text-align: right;
+    }
+
+    .profile-icon{
+        height: 30px;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .container-fluid{
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
+    .movie-img{
+        height: 200px;
+    }
+
+    .pink-block{
+        width: auto;
+        height: 50px;
+        margin-right: -10px;
+        position: relative;
+        top: 300px;
+    }
+
+    .icon{
+        height: 20px;
+    }
+
+    .pink-block h1{
+        display: none;
+    }
+
+    .pink-block h2{
+        display: none;
+    }
+
+    .pink-block img{
+        text-align: center;
+    }
+
+    .movie-details h2{
+        font-size: 20px;
+    }
+
+    .contact-info li{
+        display: none;
+    }
+
+    .contact-info img{
+        position: relative;
+        top: 50px;
+        margin-bottom:20px ;
+    }
+
+    .body-text{
+        position: relative;
+        top: 200px;
+    }
+
+    .trailer-sec{
+        width: 300px;
+    }
+
+    .trailer-btn img{
+        height: 20px;
+    }
+
+    
+
+}

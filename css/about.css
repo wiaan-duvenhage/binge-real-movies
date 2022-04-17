@@ -1,0 +1,251 @@
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #1D1B27;
+    overflow-x: hidden;
+}
+
+.search-bar{
+    height: 50px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    margin-top: 20px; 
+    overflow: hidden;
+}
+
+
+.logo{
+    margin-top: 4px;
+ }
+
+.hamburger{
+    width: 21px;
+    height: 21px;
+    margin-top: 16px;
+    margin-left: 19px;
+}
+
+.logo{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.search-bar{
+    height: 50px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px; 
+    overflow: hidden;
+}
+
+.search-bar h2{
+    font-family: 'Cantarell';
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+
+
+h7{ 
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+}
+
+h1{
+    font-family: 'Fjalla One';
+    color: white;
+    text-align: center;
+    font-size: 82px;
+    margin-top: 30px;
+}
+
+h2{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-size: 36px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h4{
+    color: white;
+    font-family: 'Cantarell';
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Fjalla One';
+    color: white;
+    font-size: 15px;
+}
+
+
+hr{
+    margin: 0 auto;
+    width: 100px;
+    border-top: 3px solid #D3418D;
+}
+
+h6{
+    padding-top: 11px;
+    text-align: center;
+    font-family: 'Cantarell';
+    color: white;
+    font-size: 48px;
+}
+
+.navSection {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navSectionTxt {
+    margin-top: 40px;
+}
+
+.navSectionTxt :hover {
+    color: #D3418D;
+}
+
+.navSectionIcon {
+    margin-top: 20px;
+}
+
+.navSectionSrch {
+    margin-top: 30px;
+
+}
+.watchlater {
+    padding:2%;
+}
+.header-about-us{
+    background-image: url('../assets/WatchLater_Header_img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin-bottom: 6%;
+    padding: 3.2%; /*brings 'about us h donw mid*/
+    overflow: hidden;
+
+}
+
+.questionmark-icon, .email-us-icon, .call-us-icon{
+    height: 70%;
+  
+}
+.body-row{
+    height: 300px;
+}
+/* .email-us
+.call-us
+.who-we-are
+li{
+    display: inline;
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+    margin: 0px 100px;
+}
+.container */
+.legal-info li{
+    font-size: 14px;
+    font-family: "cantarell";
+    margin-bottom: -11%;
+    color: aliceblue;
+ align-items: baseline;
+ justify-items: baseline;
+}
+
+.socials{
+    text-align: center;
+}
+.socials img{
+    margin: 20px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+   
+}
+li{
+    color: aliceblue;
+}
+
+.contact-info{
+    margin-left: 70%;
+    color: aliceblue;
+}
+.socials{
+   margin-bottom: -4%;
+   margin-left: 40%;
+}
+
+
+footer{
+        position: relative;
+        top: 300px;
+}
+
+
+/* @ MEDIA IPHONE PLUS */
+@media only screen and (max-width:414px) {
+    h1 {
+        font-size: 48px;
+
+    }
+    .header-about-us{
+        height: 15vh;
+        padding: 1%;
+    }
+    h6{
+font-size: 24px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .body-row {
+        height: auto;
+       
+    }
+  h2{
+      font-size: 5.5px; 
+  }
+  footer{
+    position: relative;
+    top: 300px;
+}
+}
+@media only screen and (max-width:1024px) {
+    .body-row {
+        height: auto;
+       
+    }
+    .header-about-us{
+        height: 15vh;
+        padding: 1%;
+    }
+    h2{
+        font-size: 11px; 
+        align-items: center;
+    }
+    footer{
+       
+        top: 300px;
+    }
+}
+

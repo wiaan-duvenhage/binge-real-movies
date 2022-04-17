@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Your Metadata -->
+    <meta name="author" content="Marco van der Merwe">
+    <meta name="lecturer" content="Mike Maynard">
+    <meta name="studentnumber" content="21100161">
+    <meta name="assignment" content="DV100_T4_root">
+    <meta name="subject" content="DV100_T4">
+    <meta name="class" content="2">
+
+
+    <title>BINGE©</title>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/movie-library.css "/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    
+    <!-- JS -->
+
+        <!-- API KEY : 2b5c4ad7d6c5ddafd1383a90b3aca91b -->
+
+        <div class="hamburger-nav">
+
+            <div class="navbar navbar-dark">
+
+                <button class="navbar-toggler col-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".hamburger-items" aria-controls="hamburger-items" aria-expanded="false"
+                    aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="col-3 logo ">
+                    <a href="../index.html"><img class="binge-logo" src="../assets/binge-logo-sm.svg" alt="logo" height="70px"></a>
+                </div>
+
+                <div class="col-3 profile-group">
+                    <a href="../index.html"><h7 class="hamnav-text">LOG IN</h7></a>
+                   
+                </div>
+
+                <img class="col-3 search" src="../assets/icons/search.svg" alt="search" height="30px" height="70px">
+
+            </div>
+
+            <div class="hamburger-items">
+
+                <ul>
+                    <a href="../index.html">
+                        <li>HOME</li>
+                    </a>
+                    <hr>
+                    <a href="../pages/movie-library.html">
+                        <li>LIBRARY</li>
+                    </a>
+                    <hr>
+                    <li>ABOUT</li>
+                    <hr>
+                    <a href="../pages/watch-later.html">
+                        <li>BINGE LATER</li>
+                    </a>
+                    <hr>
+                    <a href="../index.html">
+                        <li class="ham-text">LOG IN</li>
+                    </a>
+                </ul>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="nav-bar watchlater row">
+
+            <div class="col-md-1 col-lg-1 col-xxl-1 logo navSection">
+                <a href="../pages/login-and-register.html"><img  src="../assets/Logo.svg" alt="logo" height="90px"></a>
+            </div>
+            
+                    <div class="col-md-2 col-lg-2  col-xxl-2 navSection navSectionTxt"><a href="../pages/login-and-register.html"><h7>HOME</h7></a></div>
+                    <div class="col-md-2 col-lg-2  col-xxl-2 navSection navSectionTxt"><a href="../pages/movie-library.html"><h7 style="color: #D3418D;">LIBRARY</h7></a></div>
+                    <div class="col-md-2 col-lg-2  col-xxl-2 navSection navSectionTxt"><a href="../pages/watch-later.html"><h7>BINGE LATER</h7></a></div>
+                    <div class="col-md-2 col-lg-2  col-xxl-2 navSection navSectionTxt"><a href="../pages/about.html"><h7>ABOUT</h7></a></div>
+                    
+                
+            <div class="col-md-1 col-lg-1 col-xxl-1  profile-group navSection navSectionIcon">
+                <a href="../index.html"><img class="profile-icon" src="../assets/icons/account.svg" alt="icon" height="48px"></a>
+                <p style="color: white; text-align: center;">Account</p>
+            </div>
+    
+            <div class="col-md-2 col-lg-2 col-xxl-2  search-bar navSection navSectionSrch">
+                
+                
+                <div class="cntr">
+                    <div class="cntr-innr">
+                      <label class="search" for="inpt_search">
+                        <input id="inpt_search" type="text" >
+                      </label>
+                    
+                    </div>
+                  </div>
+               
+            </div>
+    
+        </div> <!--Nav Bar for Desktop-->
+
+        <div class="container-fluid">
+    
+                <div class="libraryHeader">
+                    
+                    <div class="library-icon"></div>
+                    <h1 class="header">Movie Library</h1>
+                    
+                </div>
+
+                <div style="margin-top: 2%;" class="subHeading row">
+                    <h4 class="header">Feel Free to scroll through our Selection</h4>
+                    
+                </div>
+
+                <div class="filterHeader">
+                    
+                    <h3 class="header">Filter </h3>
+                    
+                </div>
+                
+                <div class="filter row">
+                    <div class="col-6 col-xs-6 col-md-4 col-lg-2 filter-button filter-active all-button"><h4>All</h4></div>
+                    <div class="col-6 col-xs-6 col-md-4 col-lg-2 filter-button comedy-button"><h4>Comedy</h4></div>
+                    <div class="col-6 col-xs-6 col-md-4 col-lg-2 filter-button action-button"><h4>Action</h4></div>
+                    <div class="col-6 col-xs-6 col-md-4 col-lg-2 filter-button romance-button"><h4>Romance</h4></div>
+                    <div class="col-6 col-xs-6 col-md-4 col-lg-2 filter-button drama-button"><h4>Drama</h4></div>
+                    <div class="col-6 col-xs-6 col-md-4 col-lg-2 filter-button popular-button"><h4>Popular</h4></div>
+                    <div class="col-6 filter-button deep-filter"><h4>Filter By...</h4></div>
+                </div>
+
+                <div class="col-10 filter-block text-center ">
+                    <h1>Looking for something specific?</h1>
+                    <button class="btn-secondary">2021</button>
+                    <button>2020</button>
+                    <button>2019</button>
+                    <button>2018</button>
+                    <button>2017</button>
+                    <button>2016</button>
+                    <button>2015</button>
+                    <button>2014</button>
+                    <button>2015</button>
+                </div>
+
+            <hr style="width: 100%;">
+
+            <a href="../pages/individual-movie.html"><div class="movie-cards row"></a>
+                
+            </div> <!--Movie Cards-->
+
+    
+    
+        </div> <!--Container Fluid-->
+
+        <footer class="row">
+
+            <div class="col-4 legal-info">
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>About Us</li>
+                    <li>Terms of Use</li>
+                </ul>
+            </div>
+    
+            <div class="col-4 socials">
+                <p style="color: white;">BINGE© | 2021</p>
+                <a href="https://instagram.com"><img src="../assets/icons/instagram.svg" class="instagram" alt="instagram" height="30px"></a>
+                <a href="https://facebook.com"><img src="../assets/icons/facebook.svg" class="facebook" alt="facebook" height="30px"></a>
+                <a href="https://youtube.com"><img src="../assets/icons/youtube.svg" class="youtube" alt="youtube" height="30px"></a>
+                <a href="https://twitter.com"><img src="../assets/icons/twitter.svg" class="twitter" alt="twitter" height="30px"></a>
+            </div>
+    
+            <div class="col-4 contact-info">
+                <div class="contact-icons">
+                    <img src="../assets/icons/email.svg" alt="" width="20px">
+                    <img src="../assets/icons/phone.svg" alt="" width="20px">
+                </div>
+                <ul>
+                    <a href="mailto:support@binge.co.za">
+                        <li>support@binge.co.za</li>
+                    </a>
+                    <li>+27 64 982 7731</li>
+                </ul>
+            </div>
+    
+        </footer>
+        <!--Footer Content-->
+    <script src="../js/movie-library.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>

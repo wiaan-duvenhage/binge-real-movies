@@ -1,0 +1,274 @@
+/*** COLORS now defined ***/
+
+/* @bg-color: #913D88;
+@txt-color: #FFFFFF;
+@icn-color: #FFFFFF; */
+/*** DEMO ***/
+
+
+
+
+.cntr {
+    display: table;
+    width: 100%;
+    height: 100%;}
+    .cntr-innr {
+      
+        text-align: center;
+        vertical-align: middle;
+    }
+
+
+/*** sEAFCH BAR STYLES ***/
+
+.search {
+margin-top: -20px;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    box-sizing: border-box;
+    margin: 0px 8px 7px 0px;
+    padding: 7px 9px 0px 9px;
+    border: 3px solid #FFFFFF;
+   
+    border-radius: 25px;
+    transition: all 200ms ease;
+    cursor: text;
+}
+
+.search:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    right: -5px;
+    top: 21px;
+    border: 1px solid #FFFFFF;
+   
+    background: #FFFFFF;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    transition: all 200ms ease;
+}
+
+.search active, .search:hover {
+    width: 200px;
+    margin-right: 0px;
+}
+
+.search :after {
+    height: 20px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+ 
+   
+    font-size: 15px;
+    color: #ffff;
+    background: transparent;
+    outline-width: 0px;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+
+/* .binge-logo, .logo{
+    background-color: url("/img/binge-logo-sm.svg");
+    height: 20%;
+} */
+
+body{
+    background-color: #1D1B27;
+}
+
+nav{
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.logo{
+    margin-top: 4px;
+}
+
+.hamburger{
+    width: 21px;
+    height: 21px;
+    margin-top: 16px;
+    margin-left: 19px;
+}
+
+.logo{
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+/* .search-bar{
+    height: 50px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px; 
+} */
+
+/* .search-bar h2{
+    font-family: 'Cantarell';
+    text-align: left;
+    font-size: 14px;
+} */
+
+/* .search{
+    margin: 18px
+} */
+
+h7 { 
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+}
+
+h1{
+    font-family: 'Fjalla One';
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+h2{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-size: 36px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h4{
+    color: white;
+    font-family: 'Cantarell';
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Fjalla One';
+    color: white;
+    font-size: 15px;
+}
+
+hr{
+    margin: 0 auto;
+    width: 100px;
+    border-top: 3px solid #D3418D;
+}
+
+h6{
+    padding-top: 11px;
+    text-align: center;
+    font-family: 'Cantarell';
+    color: white;
+    font-size: 11px;
+}
+
+.footer{
+    background-color: #605F67;
+    border-radius: 6px 6px 0px 0px;
+    font-family: 'Cantarell';
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+li{
+    display: inline;
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+    margin: 0px 100px;
+}
+
+.social-group{
+    text-align: center;
+}
+
+.social-group p{
+    margin-top: 30px;
+    color: white;
+}
+
+span{
+    margin: 5px;
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.to-top{
+    margin-left: 10px;
+}
+
+.legal-info li{
+    display: block;
+    font-size: 14px;
+    font-family: 'Cantarell';
+    margin: 20px;
+    text-align: left;
+}
+
+.socials{
+    text-align: center;
+}
+
+.socials img{
+    margin: 0 auto;
+    margin: 20px;
+}
+
+footer{
+    background-color: #5a596b;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+.contact-info li{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    display: block;
+    margin: 20px;
+    text-align: right;
+}

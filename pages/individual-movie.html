@@ -1,0 +1,170 @@
+<!-- Wiaan Duvenhage #200307 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Your Metadata -->
+    <meta name="author" content="Wiaan Duvenhage">
+    <meta name="lecturer" content="Mike Maynard">
+    <meta name="studentnumber" content="200307">
+    <meta name="assignment" content="DV100_T4_root">
+    <meta name="subject" content="DV100_T4">
+    <meta name="class" content="2">
+
+
+    <title>BINGE©</title>
+
+    <!-- jQuery & Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/individual-movie.css"/>
+    <link rel="stylesheet" href="../css/movie-library.css"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!--add href to logo-->
+<div class="nav-bar watchlater row">
+
+    <div class="col-md-1 col-lg-1 col-xxl-1 logo navSection">
+        <a href="../pages/login-and-register.html"><img  src="../assets/Logo.svg" alt="logo" height="90px"></a>
+    </div>
+    
+            <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="../pages/login-and-register.html"><h7>HOME</h7></a></div>
+            <div class="col-md-2 col-lg-1 col-xxl-2 navSection navSectionTxt"><a href="../pages/movie-library.html"><h7>LIBRARY</h7></a></div>
+            <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="../pages/watch-later.html"><h7>BINGE LATER</h7></a></div>
+            <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="../pages/about.html"><h7>ABOUT</h7></a></div>
+            
+        
+    <div class="col-md-1 col-lg-1 col-xxl-1 profile-group navSection navSectionIcon">
+        <a href="../index.html"><img class="profile-icon" src="../assets/icons/account.svg" alt="icon" height="48px"></a>
+        <p style="color: white; text-align: center;">Account</p>
+    </div>
+
+    
+
+</div> <!--Nav Bar for Desktop-->
+
+            <div class="go-back d-lg-block d-xl-none">
+            <button class="btn btn-primary" type="submit" onclick="history.go(-1)"> <h2> &lArr; Go Back</h2> </button>
+        </div>
+
+    <div class="container-fluid">
+        <div class="row header-img">
+            
+        </div>
+
+        <div class="row movie-info">
+
+            <div class="col-6 movie-details"> <!--Actual Movie Details take first half of screen-->
+
+            </div>
+
+            <div class="col-6"> <!--Extra info (Pink blocks) takes 2nd half of screen-->
+
+
+                <!-- NEED TO CHANGE DIRECTOR TO SOMETHING ELSE | CANT FIND DIRECTOR ON API -->
+                <div class="row extra-info">
+                    
+                    <div class="col-2 pink-block runtime">
+    
+                        <img class="icon" src="../assets/icons/runtime.svg" alt="" height="40px">
+                        <h1>Runtime</h1>
+                        
+                        
+                    </div> <!--Runtime Block-->
+
+                    <!-- NEED TO CHANGE ACCESSIBILITY TO SOMETHING ELSE | CANT FIND AGE RESTRICTION ON API | PERHAPS REVENUE AMOUNT -->
+                    <div class="col-2 pink-block accessibility">
+    
+                        <img class="icon"  src="../assets/icons/accessibility.svg" alt="" height="40px">
+                        <h1></h1>
+                        
+                    </div> <!--Accessibility Block-->
+                    
+                    <div class="col-2 pink-block binge-later">
+
+                        <img class="icon"  src="../assets/icons/watch-later.svg" alt="" height="40px">
+                        <h1>Binge Later</h1>
+
+                    </div> <!--Binge Later Block for mobile & tablet-->
+
+                    <div class="col-2 pink-block trailer-btn">
+                        <img src="../assets/icons/play.svg" alt="" height="40px">
+                        <h1>Play Trailer</h1>
+                    </div>
+
+                </div> <!--row-->
+                
+
+            </div> <!--Extra Info-->
+
+        </div> <!--Movie Info-->
+
+        <div class="row overview">
+            <div class="body-text col-xxl-6 col-12">
+            </div>
+
+            <div class="binge-later-button col-6">
+                <button class="watch-later-btn"><h1>BINGE LATER</h1></button>
+            </div> <!--Binge later button for desktop-->
+
+        </div>
+
+        <div class="row trailer-sec">
+
+        </div>
+
+        
+
+        
+
+    </div>
+
+    <footer class="row">
+
+        <div class="col-4 legal-info">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>About Us</li>
+                <li>Terms of Use</li>
+            </ul>
+        </div>
+
+        <div class= "col-4 socials">
+            <p style="color: white;">BINGE© | 2021</p>
+            <img src="../assets/icons/instagram.svg" alt="instagram" height="30px">
+            <img src="../assets/icons/facebook.svg" alt="facebook" height="30px">
+            <img src="../assets/icons/youtube.svg" alt="youtube" height="30px">
+            <img src="../assets/icons/twitter.svg" alt="twitter" height="30px">
+        </div>
+
+        <div class="col-4 contact-info">
+            <div class="contact-icons">
+                <img src="../assets/icons/email.svg" alt="" width="20px">
+                <img src="../assets/icons/phone.svg" alt="" width="20px">
+            </div>
+            <ul>
+                <a href="mailto:support@binge.co.za"><img src="../assets/icons/email.svg" alt="" height="30px"><li class="email-text">support@binge.co.za</li></a><br>
+                <img src="../assets/icons/phone.svg" alt="" width="30px"><li class="number">+27 64 982 7731</li>
+            </ul>
+        </div>
+        
+
+    </footer> <!--Footer Content-->
+
+    <!-- JS -->
+    <script src="../js/individual-movie.js"></script>
+    <script src="../js/watch-later.js"></script>
+</body>
+</html>
